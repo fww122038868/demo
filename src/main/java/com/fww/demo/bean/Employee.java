@@ -50,4 +50,15 @@ public class Employee {
     public void setDid(Integer did) {
         this.did = did;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "eid=" + eid +
+                ", ename='" + ename + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                ", did=" + did +
+                '}';
+    }
 }
