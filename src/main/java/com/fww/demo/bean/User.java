@@ -9,6 +9,8 @@ public class User {
 
     private String ss;
 
+    private int me;
+
     public Integer getUid() {
 
         return uid;
