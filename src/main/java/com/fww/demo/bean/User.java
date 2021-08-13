@@ -7,8 +7,19 @@ public class User {
 
     private String password;
 
+    private String ss;
+
     public Integer getUid() {
+
         return uid;
+    }
+
+    public String getSs() {
+        return ss;
+    }
+
+    public void setSs(String ss) {
+        this.ss = ss;
     }
 
     public void setUid(Integer uid) {
@@ -31,5 +42,12 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
